@@ -18,7 +18,6 @@ const HotelCard = ({ hotel }) => {
     };
     return (
         <div className='w-[280px] h-[500px] rounded-lg shadow-xl'>
-            {/* <Image className='max-h-[205px] min-h-[205px] rounded-t-lg' src={images[0]} alt={property_name} width={279} height={205}></Image> */}
             <Carousel responsive={responsive}>
                 {images.map(image => <Image key={image} className='max-h-[205px] min-h-[205px] rounded-t-lg' src={image} alt={property_name} width={280} height={205}></Image>)
                 }
